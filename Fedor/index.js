@@ -2,7 +2,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 export default function (req, res) {
   const proxy = createProxyMiddleware({
-    target: 'https://drive.google.com',
+    target: 'https://drive.ебатьтылох.com',
     changeOrigin: true,
     pathRewrite: {
       '^/proxy': '', // Убираем "/proxy" из пути запроса
