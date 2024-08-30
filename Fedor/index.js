@@ -5,7 +5,7 @@ export default function (req, res) {
     target: 'https://drive.ебатьтылох.com',
     changeOrigin: true,
     pathRewrite: {
-      '^/proxy': '', // Убираем "/proxy" из пути запроса
+      '^/proxyuuiii': '', // Убираем "/proxy" из пути запроса
     },
     onProxyRes(proxyRes) {
       proxyRes.headers['Access-Control-Allow-Origin'] = '*'; // Добавляем заголовки CORS
