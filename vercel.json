@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Fedor/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/proxy/(.*)",
+      "dest": "/Fedor/index.js?url=$1"
+    }
+  ]
+}
